@@ -1,9 +1,10 @@
 import React from 'react'
-import {render, fireEvent} from 'react-testing-library'
+import {render, fireEvent, cleanup} from 'react-testing-library'
 import Counter from '../lessons/05-testing-effects'
 
 afterEach(() => {
   window.localStorage.removeItem('count')
+  cleanup() // <-- required for codesandbox for some reason...
 })
 
 test('counter increments the count', () => {
