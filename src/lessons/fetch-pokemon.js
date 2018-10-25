@@ -29,7 +29,6 @@ function fetchPokemon(name) {
     })
     .then(r => r.json())
     .then(response => response.data.pokemon)
-    .then(() => Promise.reject('bad data'))
 }
 
 export default fetchPokemon

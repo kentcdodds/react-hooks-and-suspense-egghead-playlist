@@ -1,14 +1,16 @@
 {
-  "name": "react-codesandbox",
+  "name": "react-hooks-and-suspense-egghead-playlist",
   "version": "1.0.0",
-  "description": "",
+  "description": "A series of lessons about React hooks and suspense I'll be putting on Egghead.io",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.7.0-alpha.0",
+    "react-cache": "16.6.0-alpha.8af6728",
     "react-dom": "16.7.0-alpha.0",
     "react-scripts": "2.0.5",
-    "react-testing-library": "5.2.1"
+    "react-testing-library": "5.2.1",
+    "vanilla-tilt": "1.5.0"
   },
   "devDependencies": {},
   "scripts": {
