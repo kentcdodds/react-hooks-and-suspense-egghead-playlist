@@ -1,12 +1,11 @@
 import React, {useState, Suspense} from 'react'
-import {createCache, createResource} from 'react-cache'
+import {unstable_createResource as createResource} from 'react-cache'
 import fetchPokemon from './fetch-pokemon'
 
-const cache = createCache()
 const myPokemon = createResource(fetchPokemon)
 
 function PokemonInfo({pokemonName}) {
-  const pokemon = myPokemon.read(cache, pokemonName)
+  const pokemon = myPokemon.read(pokemonName)
   return <pre>{JSON.stringify(pokemon || 'Unknown', null, 2)}</pre>
 }
 
