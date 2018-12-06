@@ -5,7 +5,7 @@ const cache = {}
 
 function PokemonInfo({pokemonName}) {
   const pokemon = cache[pokemonName]
-  if (!pokemon) {
+  if (pokemon === undefined) {
     const promise = fetchPokemon(pokemonName).then(
       p => (cache[pokemonName] = p),
     )
