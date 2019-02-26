@@ -5,12 +5,12 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.7.0-alpha.2",
+    "react": "16.8.3",
     "react-cache": "2.0.0-alpha.1",
-    "react-dom": "16.7.0-alpha.2",
-    "react-scripts": "2.1.1",
-    "react-testing-library": "5.2.3",
-    "vanilla-tilt": "1.5.0"
+    "react-dom": "16.8.3",
+    "react-scripts": "2.1.5",
+    "react-testing-library": "6.0.0",
+    "vanilla-tilt": "1.6.1"
   },
   "devDependencies": {},
   "scripts": {
